@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<title>Singing For Arthur</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('images/1.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Recording Berlioz) */
+.bgimg-2 {
+    background-image: url("images/2.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Verdi with Bernstein) */
+.bgimg-3 {
+    background-image: url("images/3.jpg");
+    min-height: 400px;
+}
+
+/* Fourth image (Recording Belshazzar) */
+.bgimg-4 {
+    background-image: url("images/4.jpg");
+    min-height: 400px;
+}
+
+/* Fifth image (Beethoven 9 Giulini) */
+.bgimg-5 {
+    background-image: url("images/5.jpg");
+    min-height: 400px;
+}
+
+/* Sixth image (Belshazzar in Rome) */
+.bgimg-6 {
+    background-image: url("images/6.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar" id="myNavbar" style="background-color:#fff">
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+      <a class="w3-hover-black" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+    </li>
+    <li class="w3-left-align"><a href="#home">HOME</a></li>
+    <li class="w3-hide-small"><a href="#synopsis"> SYNOPSIS</a></li>
+    <li class="w3-hide-small"><a href="#recording-berlioz"> BERLIOZ</a></li>
+    <li class="w3-hide-small"><a href="#verdi-with-bernstein"> VERDI WITH BERNSTEIN</a></li>
+    <li class="w3-hide-small"><a href="#recording-belshazzar"> BELSHAZZAR</a></li>
+    <li class="w3-hide-small"><a href="#beethoven-9-giulini"> BEETHOVEN 9 GIULINI</a></li>
+    <li class="w3-hide-small"><a href="#belshazzar-in-rome"> BELSHAZZAR IN ROME</a></li>
+  </ul>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+    <ul class="w3-navbar w3-left-align w3-white">
+      <li><a href="#synopsis" onclick="toggleFunction()">SYNOPSIS</a></li>
+      <li><a href="#recording-berlioz" onclick="toggleFunction()">RECORDING BERLIOZ</a></li>
+      <li><a href="#verdi-with-bernstein" onclick="toggleFunction()">VERDI WITH BERNSTEIN</a></li>
+      <li><a href="#recording-belshazzar" onclick="toggleFunction()">RECORDING BELSHAZZAR</a></li>
+      <li><a href="#beethoven-9-giulini" onclick="toggleFunction()">BEETHOVEN 9 GIULINI</a></li>
+      <li><a href="#belshazzar-in-rome" onclick="toggleFunction()">BELSHAZZAR IN ROME</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-opacity-min" style="width:90%;">SINGING FOR ARTHUR</span>
+  </div>
+</div>
+
+<!-- Container (Synopsis Section) -->
+<div class="w3-content w3-container w3-padding-64" id="synopsis">
+  <h3 class="w3-center">SINGING FOR ARTHUR</h3>
+  <p class="w3-center"><em>
+  <br>Robin Moore's comprehensive account of Arthur Oldham's unique career as a choral trainer in both London and Edinburgh.</br>
+  Those who had the privilege of singing with him will always gratefully bear Arthur's mark, and will never forget him.</em></br>
+  JOHN BRIDCUT</br>
+  <button class="w3-btn w3-light-grey w3-padding-xlarge" style="margin:4%"><a href="https://www.amazon.co.uk/Singing-Arthur-Robin-Moore/dp/1517055865" target="_blank">BUY THE BOOK</a></button></p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="images/cover_singing-for-arthur.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Cover of the book Singing For Arthur" width="500" height="333" style="padding-top:5%">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>This book, devoted to Arthur Oldham, one of the greatest English chorus masters in the second half of the twentieth century, 
+        is written from the point of view of a chorister who had the privilege of singing symphonic choral music under Oldham’s direction, first as a member of the LSO Chorus from 1969 to 1974 and then the Edinburgh Festival Chorus from 1974 to 1977.
+        The book describes how Arthur Oldham became a chorus master, and examines his approach and methods with regard to choral training. 
+        It looks at the origins and development of the Edinburgh Festival Chorus and Oldham’s work with the LSO Chorus.
+        Pre-eminent among the conductors he worked with are Carlo Maria Giulini and Colin Davis and the book examines his relationship with both. 
+        The list of legendary conductors he also worked with includes Bernstein, Stokowski, Kertesz, Previn, Abbado and Barenboim. To that list two composer-conductors, Britten and Tippett need to be added, 
+        and particularly the former as Arthur was Britten’s only composition pupil.
+        The book looks at and compares the differing interpretative approaches to the choral masterworks of these conductors and reviews the critical reaction to the resulting concerts and recordings. 
+        It also chronicles the stresses and satisfactions of an amateur chorister who has to hold down a demanding job while singing symphonic choral music at the highest level with major orchestras under the leading maestros of the day.</br>
+        John Bridcut, the eminent documentary film maker and author of two books on Benjamin Britten, who was a member of the LSO Chorus in the 1970s, contributes a foreword.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Second Parallax Image with Recording Berlioz Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">RECORDING BERLIOZ</span>
+  </div>
+</div>
+
+<!-- Container (Recording Berlioz Section) -->
+<div class="w3-content w3-container w3-padding-64" id="recording-berlioz">
+  <p class="w3-left-align"><em>“When the records of the Grande Messe were released the following autumn, it was to considerable acclaim. 
+    There were comments about a lack of numbers in the tenors and basses, the tenors particularly, leading to a feeling of strain at moments, but even this was turned on its head as one critic felt this to be appropriate to the moment. 
+    Two things were generally agreed, Colin Davis’ mastery of the score and the way in which the spacious acoustics of the cathedral had been captured without losing any impact.</br>
+    There were eight sessions of Berlioz over ten days and barely had we recovered from than them when it was time to meet the great Eugene Ormandy. This would be the first of many encounters with Beethoven’s Choral symphony over the next five years.”</em></p><br>
+
+  <!-- Responsive Grid. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m11">
+      <img src="images/berlioz_02.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Recording Berlioz Grande Messe des Morts Westminster Cathedral November 1969">
+    </div>
+
+    <div class="w3-row w3-center w3-padding-16">
+      <p><em>Recording Berlioz Grande Messe des Morts Westminster Cathedral November 1969</em></p>
+    </div>
+
+    <div class="w3-col m11">
+      <img src="images/berlioz_01.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains"></br >
+    </div>
+
+    
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Verdi with Bernstein Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-light-grey w3-wide">VERDI WITH BERNSTEIN</span>
+  </div>
+</div>
+
+<!-- Container (Verdi with Bernstein Section) -->
+<div class="w3-content w3-container w3-padding-64" id="verdi-with-bernstein">
+  <p class="w3-left-align"><em>“The choir now numbered around two hundred but even this number was not always sufficient to rise above the LSO at full tilt. 
+    At one rehearsal during a marathon day in Hammersmith Town Hall Arthur came bustling forward to say to Lennie that the choir could not be heard. 
+    Bernstein’s reply was to the effect that he did not wish to reduce the orchestral sound any more “because it takes all the fun out of playing!” The relationship between Arthur and Bernstein was not totally amicable as we shall see, 
+    and laid the foundation for the clause in Arthur’s contract for their final Edinburgh collaboration that Arthur was to be seen and not heard at Bernstein’s rehearsals.”</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m11">
+      <img src="images/verdi_01.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="w3-row w3-center w3-padding-16">
+      <p><em>The televised Verdi Requiem conducted by Leonard Bernstein in St. Paul's Cathedral February 1970</em></p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Fourth Parallax Image with Recording Belshazzar Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-light-grey w3-wide">RECORDING BELSHAZZAR</span>
+  </div>
+</div>
+
+<!-- Container (Recording Belshazzar Section) -->
+<div class="w3-content w3-container w3-padding-64" id="recording-belshazzar">
+  <p class="w3-left-align"><em>“With his tongue ever in his cheek, Walton inscribed in Previn’s score after the performance, 
+    “To André, King of Kings, with my thanks for the best performance ever given of this piece”. When asked if he meant it, Walton replied “Of course not”. 
+    To confirm his opinion at the time, in his Letters he wrote to Walter Legge shortly after that André Previn had given a marvellous performance of what he referred to as B.’s F. 
+    But as his published Letters also show, he did revise that judgement later, whatever he may have thought and said on the night.”</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m11">
+      <img src="images/belshazzar_02.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-row w3-center w3-padding-16">
+      <p><em>Recording Belshazzar's Feast in Kingsway Hall, with Andre Previn and Christopher Bishop March 1972</em></p>
+    </div>
+
+    <div class="w3-col m11">
+      <img src="images/belshazzar_01.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Fifth Parallax Image with Beethoven 9 Giulini Text -->
+<div class="bgimg-5 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-light-grey w3-wide">BEETHOVEN 9 GIULINI</span>
+  </div>
+</div>
+
+<!-- Container (Beethoven 9 Giulini Section) -->
+<div class="w3-content w3-container w3-padding-64" id="beethoven-9-giulini">
+  <p class="w3-left-align"><em>“On the Sunday we were all in the Festival Hall. Alan Blyth in The Times spoke of “wonderful unanimity of purpose between conductor and his soloists, choir and orchestra”, 
+    that purpose seeming “to unite the lyrical and dramatic aspects of the symphony, which in lesser hands can seem to be at odds” and he went on to describe the singing of the choir as “thrilling, 
+    almost to the point of blatancy”. Overall, he felt the interpretation did not add up to the sum of its considerable parts.”</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m11">
+      <img src="images/giulini-beethoven9_01.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="w3-row w3-center w3-padding-16">
+      <p><em>Beethoven 9 in the Royal Festival Hall with Giulini, November 1972</em></p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Sixth Parallax Image with Belshazzar in Rome Text -->
+<div class="bgimg-6 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-light-grey w3-wide">BELSHAZZAR IN ROME</span>
+  </div>
+</div>
+
+<!-- Container (Belshazzar in Rome Section) -->
+<div class="w3-content w3-container w3-padding-64" id="belshazzar-in-rome">
+  <p class="w3-left-align"><em>“The programme was an all Walton celebration, the Violin Concerto with Kyung-Wha Chung and Belshazzar’s Feast with our good friend John Shirley-Quirk. 
+    It had been put together by the British Council’s representative in Rome, Jack Buckley, who had persuaded RAI to stage a 70th birthday tribute, albeit belated, to Walton from the country in which he had been living for thirty years and more. 
+    Walton’s sardonic view was that even after living in Italy for all this time, nobody there knew he was a composer.”</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m11">
+      <img src="images/belshazzar-rome_01.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="w3-row w3-center w3-padding-16">
+      <p><em>Rome January 1974. Previn, Walton, Arthur and John Shirley-Quirk</em></p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-btn w3-padding w3-light-grey w3-hover-grey"><i class="fa fa-arrow-up w3-margin-right"></i>BACK TO TOP</a>
+  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<!-- Scripts -->
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
